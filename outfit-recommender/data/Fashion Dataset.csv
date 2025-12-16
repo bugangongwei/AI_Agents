@@ -1,0 +1,335 @@
+Year,Collection,Collection Type,Location,Gender,Colour,Patterns,Shoes,Accessories,Fabric,Theme
+1988,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"black, grey, red, beige","crunched waist, vertical stripes","pumps, high knee boots, pointed heels",stalkings,"fur, satin","tomboy, powerful"
+1988,FALL,COUTURE,NEW YORK,WOMEN,"red, pink, grey, black, beige","abstract, floral",pointed heels,"big hats, sunglasses, chunky jewelry","fur, satin","antique, medieval"
+1988,SPRING,COUTURE,PARIS,WOMEN,"yellow, orange, blue, white","floral, polka dots",stilettos,"big headwear, big hats","brushed cotton, cotton crosswear",ostentatious
+1989,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"black, yellow, white",plain,pointed boots,gloves,"woollen, velvet","modest, workforce"
+1990,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"black, grey, lavender, blue","vertical stripes, checks, abstract",ballet flats,blazer,"leather, nets, linen","sexy, boardroom"
+1990,SPRING,READY-TO-WEAR,PARIS,WOMEN,"green, white","abstract, vertical stripes","ballet flats, loafers","shrugs, jackets, beads, big belts","mesh, satin","classy, splashy"
+1991,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"blue, pink, white, beige, black, neons","vertical stripes, animal print, checks, vertical button line, butterfly","pumps, boots","chunky gold jewelry, buttons, gloves, jackets","sheer, mesh, fleece","hip-hop, sexy"
+1991,SPRING,READY-TO-WEAR,PARIS,WOMEN,"neons, yellow, pink, orange, black, white","polka dots, stripes, checks","stilettos, flats",headgear,"khaki, cotton, flowy, sheer, mesh",pop
+1992,SPRING,READY-TO-WEAR,PARIS,WOMEN,"black, blue, red",straps,boots,gloves,"leather, velvet, sheer","sophisticated, strong"
+1992,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"red, yellow, white, black","strapless, animal print, vertical stripes","pumps, stilettos, flats","headgear, chunky gold jewelry","nylon, rayon, carbon","low-cut, provocative"
+1993,SPRING,COUTURE,PARIS,WOMEN,"black, white","cross, ruffles","pointed pumps, pointed boots",pearls,"mesh, flannel","haute couture, silhouette"
+1993,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"black, white, brown, pastel","stripes, stripes, pleated, fishnets","loafers, boots, ballets","headgear, beret, gold jewellery, huge hats","fleece, mesh, woollen","grunge, flashy"
+1993,SPRING,READY-TO-WEAR,PARIS,WOMEN,"red, yellow, white, black, pastel","stripes, leaves, checks, abstract","sports shoes, ballets","big chokers, beads, corsets, tassels","mesh, flannel","thrift, sportswear, cool, classy"
+1994,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"black, white, red, yellow","loosely fit, checks","square toe boots, loafers","fur, gold, bows, buttons",fur,chique
+1994,SPRING,COUTURE,PARIS,WOMEN,"black, white, brown, yellow","vertical stripes, checks",pumps,hats,"silk, canvas",medieval
+1994,SPRING,READY-TO-WEAR,PARIS,WOMEN,"black, white, red, brown","vertical stripes, abstract, ruffles","barefoot, shoes, chunky heels",none,"denim,cotton, flowy, mesh","pop, summer"
+1995,FALL,COUTURE,NEW YORK,WOMEN,"black, white",plain,pumps,"headgear, chunky gold jewelry","chenille, woollen","unique, classy, fierce, bold"
+1995,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"black, white, grey","plain, checks",pumps,hats,"georget, linens, velvet","simple, funk"
+1995,SPRING,READY-TO-WEAR,PARIS,WOMEN,"pink, white, black","vertical stripes, checks, polka dots",stilettos,"bags, brooch, belts, diamonds, gold","synthetic, satin, rayon","classy, chique"
+1996,FALL,COUTURE,NEW YORK,WOMEN,"black, blue, maroon, red",plain,pointed heels,"headgear, gold, button","tweed, woollen",mob wife
+1996,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"black, brown, lavender, maroon, purple, red",plain,"square toe heels, loafers",none,"tweed, velvet","mob wife, professional"
+1996,SPRING,READY-TO-WEAR,PARIS,WOMEN,"pastel, brown, white, black, yellow","checks, vertical stripes, plain",ballets,"sunglasses, headgear","sheer, polyester","simple, professional"
+1996,SPRING,COUTURE,PARIS,WOMEN,"white, black,orange","animal print, plain",stilettos,headgear,"organza, silk",cabaret
+1997,FALL,READY-TO-WEAR,NEW YORK,WOMEN,black,plain,pointed boots,"gloves, headbands","woollen, leather",classic
+1997,SPRING,READY-TO-WEAR,PARIS,WOMEN,"black, brown, blue, maroon, red, yellow","animal print, floral, fishnets","stilettos, flats",small handbags,"mesh, velvet, silk, linen","bossy, mob wife"
+1997,FALL,COUTURE,NEW YORK,WOMEN,"black, grey, pink",embroidery,"pointed heels, pointed boots",none,"woollen, polyester","professional, work"
+1997,SPRING,COUTURE,PARIS,WOMEN,"black, white, pink, gold","embroidery, vertical stripes",pointed stilettos,headgear,"mesh, viscose, rayon",mob wife
+1998,SPRING,MENSWEAR,PARIS,MEN,"black, white, beige","plain, fishnet",square toe oxfords,none,"mesh, linen, polyester","classic, minimalistic"
+1998,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"black, white, grey",plain,"pointed loafers, pointed boots",none,"silk, polyester, tuxedo","silhouette, classy"
+1998,SPRING,COUTURE,PARIS,WOMEN,"black, white, grey",plain,"pointed stilettos, pointed pumps",none,"polyester, silk, flowy",classy
+1998,SPRING,READY-TO-WEAR,PARIS,WOMEN,"pastel, black, white",plain,"stilettos, pointed flats",none,"cottin, polyester",classy
+1999,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"black, brown, lavender, white, yellow, grey",plain,"pointed loafers, boots","shrugs, jackets","linen, polyester, silk","powerful, classic"
+1999,FALL,MENSWEAR,NEW YORK,MEN,"black, grey",plain,"square oxfords, boots",none,"silk, tuxedo",academia
+1999,SPRING,MENSWEAR,PARIS,MEN,"black, white",plain,"slip ons, shoes","vests, jackets","cotton, polyester, silk",youth
+1999,FALL,COUTURE,NEW YORK,WOMEN,"black, white, brown, beige",plain,"pointed stilettos, pointed pumps",feather,"leather, woollen, tweed, polyester",powerful
+1999,SPRING,COUTURE,PARIS,WOMEN,"black, white, grey, pastel",plain,"pointed stilettos, pointed pumps, pointed flats",headgear,"sheer, polyester, organza",classy
+1999,SPRING,READY-TO-WEAR,PARIS,WOMEN,"black, yellow, white, orange, brown, red, blue",plain,loafers,none,"silk, sheer, flowy",clean girl
+2000,FALL,COUTURE,NEW YORK,WOMEN,black,"fishnets, tassels",pointed pumps,"headgear, beads, glitter","mesh, polyester","flashy, rich"
+2000,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"black, brown, grey, rusty","plain, herringbone","pointed pumps, round flats, boots","gold, scarf","woollen, polyester, fleece",mob wife
+2000,SPRING,COUTURE,PARIS,WOMEN,"black, white",plain,pointed pumps,glitter,"mesh, fur, polyester","flashy, rich"
+2000,SPRING,READY-TO-WEAR,PARIS,WOMEN,"black, white, grey, pastel, brown, beige","plain, leaves","stilettos, flats",glitter,"chiffon, polyester, cotton","basic, y2k"
+2000,SPRING,MENSWEAR,PARIS,MEN,"pastel, black, maroon",plain,"canvas, leather shoes, loafers",jackets,"linen, polyester","subtle, basic"
+2001,FALL,MENSWEAR,NEW YORK,MEN,"black, brown","vertical stripes, plain",boots,"gator, hood","leather, woollen","grunge, emo"
+2001,SPRING,READY-TO-WEAR,PARIS,WOMEN,"black, brown, white","floral, fishnets","stilettos, flats","chokers, glitter","leather, mesh, polyester","y2k, basic"
+2001,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"black, orange, yellow, blue, brown, white, lavender","lace, checks, vertical stripes","round pumps, loafers, high knee boots",belts,"silk, chiffon","rich, y2k"
+2001,FALL,COUTURE,NEW YORK,WOMEN,"brown, rusty, black, white, orange, white, purple, pink. red",checks,"pumps, stilettos, boots","high necks, fur, headgear","mesh, silk, woollen",rich
+2001,SPRING,COUTURE,PARIS,WOMEN,"rusty, red, orange","lace, plain, embroidery",pointed pumps,"hat, gloves, flowers","chiffon, cotton, polyester, silk","classic, rich"
+2002,SPRING,COUTURE,PARIS,WOMEN,"black, white, beige, pastels","ruffles, abstract",pointed pumps,"glitter, headgear","chiffon, mesh, polyester, organza","y2k, funky, classic"
+2002,SPRING,MENSWEAR,PARIS,MEN,"black, white, blue, yellow",plain,oxfords,"hood, gator","woollen, polyester","youth, emo"
+2002,FALL,COUTURE,NEW YORK,WOMEN,"black, white, maroon, yellow, brown, purple",abstract,boots,"fur, headgear","woollen, polyester","mob wife, rich"
+2002,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"black, white, rusty, brown, maroon, beige","hemppants, plain, lace","pointed boots, pointed pumps","leggins, spiked belts, spiked bags","chiffon, silk, polyester",rich
+2002,FALL,MENSWEAR,NEW YORK,MEN,"brown, grey, black",puffer,"boots, oxfords","hood, gator","leather, woollen",emo
+2002,SPRING,READY-TO-WEAR,PARIS,WOMEN,"white, black, orange, blue, pastel, pink","ruffles, abstract",pointed pumps,"belts, gold","chiffon, polyester, flowy, cotton","y2k, classic, work"
+2003,SPRING,READY-TO-WEAR,PARIS,WOMEN,"grey, pastel","stripes, pleated, ruffles","stilettos, pointed pumps",bags,"organza, polyester, flowy","glam, pop"
+2003,FALL,COUTURE,NEW YORK,WOMEN,"black, , white","embroidery, plain",pointed pumps,"fur, headgear","ribbed, polyester, satin, organza","classic, glam, mob wife"
+2003,SPRING,MENSWEAR,PARIS,MEN,"black, white",plain,none,"jacket, bandana","cotton, polyester",grunge
+2003,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"brown, green, grey, orange, blue","plain, abstract",pointed boots,jacket,"leather, fleece, satin",glam
+2003,FALL,MENSWEAR,NEW YORK,MEN,"green, red, yellow, black, blue",plain,"boots, oxfords",hats,polyester,"youth, classic"
+2003,SPRING,COUTURE,PARIS,WOMEN,"red, pink, blue, yellow, orange, black, white","ruffles, floral",stilettos,headgear,"organza, polyester, flowy","glam, pop"
+2004,FALL,COUTURE,NEW YORK,WOMEN,"black, , white",ruffles,pointed boots,"headgear, gloves",organza,glam
+2004,SPRING,COUTURE,PARIS,WOMEN,"black, pastels, yellow, white",ruffles,"stilettos, pointed pumps",none,"satin, polyester",glam
+2004,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"pink, red, yellow, blue, rusty, brown, orange, black","abstract, checks",stilettos,none,"ploster, woollen, satin","glam, rich"
+2004,SPRING,READY-TO-WEAR,PARIS,WOMEN,"white, brown,","abstract, plain",stilettos,none,"satin, silk, flowy, polyester","glam, pop"
+2005,FALL,MENSWEAR,NEW YORK,MEN,"black, brown, white, beige, purple","plain, checks","boots, oxfords",scarf,"tweed, polyester, silk","classic, academia"
+2005,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"black, white, brown , grey","plain, stripes","boots, pumps",coats,"woollen, chiffon , polyester",classic
+2005,SPRING,COUTURE,PARIS,WOMEN,"orange, white, black, lavender, green","plain, embroidery",pointed pumps,headgear,"tweed, polyester, satin, chiffon, organza","classic, pop"
+2005,SPRING,MENSWEAR,PARIS,MEN,"white, beige, black, yellow, green","vertical stripes, plain",loafers,"bags, hats","linen, polyester","classic, academia"
+2005,SPRING,READY-TO-WEAR,PARIS,WOMEN,"white, black, pastel","plain, abstract","ballets, stilettos",bags,"flowy, polyester, cotton, chiffon",pop
+2005,FALL,COUTURE,NEW YORK,WOMEN,"white, green , maroon, black, grey","ruffles, floral","boots, pumps",headgear,"mesh, organza, polyester",medieval
+2006,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"black, beige, blue, green",checks,high knee boots,"hats, fur, belts","polyester, woollen, silk","glam, rich"
+2006,FALL,MENSWEAR,NEW YORK,MEN,"black, blue, brown","plain, vertical stripes, checks",loafers,fur,"woollen, tuxedo, polyester","glam, rich"
+2006,FALL,COUTURE,NEW YORK,WOMEN,"black, white, grey, blue, red, green","ruffles, houndstooth","high knee boots, pumps",none,"velvet, chiffon, silk, polyester",", glam"
+2006,SPRING,MENSWEAR,PARIS,MEN,"white, beige, blue","vertical stripes, plain",loafers,blazers,"polyester, silk, cotton","rich, youth"
+2006,SPRING,COUTURE,PARIS,WOMEN,"white, black, grey, pink","polka dots, ruffles",pumps,gold,"chiffon, organza, silk, polyester","rich, classic"
+2006,SPRING,READY-TO-WEAR,PARIS,WOMEN,"white, blue, pink, beige","ruffles, floral",stilettos,chunky jewelry,"chiffon, silk, polyester","chique, rich"
+2007,RESORT,RESORT,RESORT,WOMEN,"black, blue, white",floral,stilettos,"hats, beads","polyester, silk",basic
+2007,SPRING,MENSWEAR,PARIS,MEN,"black, grey, beige","vertical stripes, checks, plain","loafers, oxfords",belts,"polyester, cotton, linen","pop, rich"
+2007,FALL,MENSWEAR,NEW YORK,MEN,"black, grey, beige, brown",plain,boots,hats,"tweed, polyester, woollen","medieval, ruch"
+2007,FALL,COUTURE,NEW YORK,WOMEN,"black, white",ruffles,high knee boots,headgear,"tweed, woollen, silk, organza, mesh",mob wife
+2007,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"green, red, black, grey, blue, orange","houndstooth, plain",boots,"headgear, gloves, bags","leather, tweed, woollen","mob wife, rich"
+2007,SPRING,COUTURE,PARIS,WOMEN,"pink, white, black","fishnet, lace, embroidery",pumps,"headgear, clutches","leather, silk, mesh, polyester","glam, rich"
+2007,SPRING,READY-TO-WEAR,PARIS,WOMEN,"white, black, red, orange",ruffles,stilettos,"headgear, bags","polyester, flowy, organza",pop rich
+2008,SPRING,MENSWEAR,PARIS,MEN,"black, white, blue, orange",plain,"loafers, canvas","bags, sunglasses","silk, polyester","activewear, youth"
+2008,SPRING,READY-TO-WEAR,PARIS,WOMEN,"black, white, blue, red, pink","ruffles, floral, tassels",pumps,"hats,","silk, mesh, polyester, cotton","glam, pop"
+2008,SPRING,COUTURE,PARIS,WOMEN,"black, white, green, blue","ruffles, floral, vertical stripes",pumps,"headgear, gold","mesh, silk, polyester","pop, glam"
+2008,RESORT,RESORT,RESORT,WOMEN,"black, white, orange, blue","floral, plain","flats, stilettos","bags, hats","woollen, cotton, silk, polyester","basic, pop"
+2008,FALL,COUTURE,NEW YORK,WOMEN,"brown, rusty, white, grey","ruffles, embroidery","pumps, boots",headgear,"mesh, organza, sil, velvet, woollen, polyester","rich, glam"
+2008,FALL,MENSWEAR,NEW YORK,MEN,grey,"puffer, checks",pointed oxfords,vests,"tweed, woollen, polyester",classic
+2008,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"grey, white, black, blue","ruffles, lace",pointed pumps,chunky jewelry,"silk, polyester, organza, chiffon","pop, basic"
+2009,FALL,MENSWEAR,NEW YORK,MEN,"black, grey",plain,boots,none,"tweed, polyester, woollen","grunge, academia"
+2009,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"black, grey, beige","plain, houndstooth",boots,gold,"silk, tweed, woollen","rich, chique"
+2009,FALL,COUTURE,NEW YORK,WOMEN,"black, white, pink, yellow","lace, embroidery, ruffles, floral",pumps,"headgear, silver","mesh, silk,polyester, leather","rich, chique"
+2009,SPRING,MENSWEAR,PARIS,MEN,"grey, white",plain,loafers,none,"silk, polyester","basic, minimalistic"
+2009,RESORT,RESORT,RESORT,WOMEN,"grey, white, orange, yellow","abstract, lace",stilettos,chunky jewelry,"silk, organza, polyester","pop, minimalistic"
+2009,SPRING,READY-TO-WEAR,PARIS,WOMEN,"white, black, brown, beige","checks, plain",stilettos,"bags, straps","polyester, cotton, denim","basic, grunge"
+2009,SPRING,COUTURE,PARIS,WOMEN,"white, yellow, black, red","ruffles, plain","pumps, stilettos",chunky jewelry,"silk, polyester, satin, organza","glam, rich"
+2010,SPRING,READY-TO-WEAR,PARIS,WOMEN,"black, blue, brown, green, white","vertical stripes, checks, plain","wedges, flats",chunky jewelry,"polyester, silk","funk, pop"
+2010,RESORT,RESORT,RESORT,WOMEN,"black, white, blue, yellow","stripes, abstract","stilettos, pumps","bags, gold","silk, polyester, mesh","y2k, pop"
+2010,SPRING,COUTURE,PARIS,WOMEN,"blue, pink, white, black, yellow","tassels, ruffles","pointed pumps, pointed boots","headgear, chunky diamond jewelry","mesh, polyester, denim","flashy, funk"
+2010,FALL,MENSWEAR,NEW YORK,MEN,"grey, blue",houndstooth,boots,belts,"tweed, woollen","classic, rich"
+2010,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"maroon, green, grey, black","embroidery, checks",pointed boots,"scarf best, jacket","fur, woollen, polyester, tweed","flashy, glam"
+2010,FALL,COUTURE,NEW YORK,WOMEN,"red, black, white, red, purple","embroidery, lace",stilettos,chunky jewllery,"organza, mesh, polyester","pop, rich"
+2010,SPRING,MENSWEAR,PARIS,MEN,"yellow, brown, black, white","plain, abstract, stripes","loafers, stilettos","bags, belts","cotton, polyester","basic, soft"
+2011,SPRING,MENSWEAR,PARIS,MEN,"black, blue, brown, white",plain,"boots, loafers",none,"polyester, leather, tuxedo","pop, classic"
+2011,FALL,MENSWEAR,NEW YORK,MEN,"black, brown, red","checks, abstract","boots, sneaker",none,"leather, polyester","funk, classic"
+2011,SPRING,COUTURE,PARIS,WOMEN,"black, pastel, white, brown,","ruffles, stripes",stilettos,"headgear, fur","mesh, chiffon, silk","classic, pop"
+2011,SPRING,READY-TO-WEAR,PARIS,WOMEN,"black, pastel, white, yellow, blue, green","ruffles, abstract, floral","stilettos, pumps","bags, bows","chiffon, cotton, polyester, silk","pop, chique"
+2011,RESORT,RESORT,RESORT,WOMEN,"black, white, brown","polka dots, checks",pumps,"bows, bags","polyester, silk, linen","classic, pop, chique"
+2011,FALL,COUTURE,NEW YORK,WOMEN,"black, white, brown","ruffles, lace , stripes, houndstooth","boots, pumps","headgear, gloves","organza, mesh, silk, satin","classy, chique"
+2011,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"black, white, brown, red","checks, plain, abstract",boots,"bags, fur","leather, polyester",pop
+2012,RESORT,RESORT,RESORT,WOMEN,"black, blue, green, red","floral, lacy",stilettos,none,"polyester, silk",rich
+2012,SPRING,MENSWEAR,PARIS,MEN,"black, blue, orange, grey","checks, stripes",loafers,hats,"tuxedo, oyster, linen, denim","rich, pop"
+2012,FALL,MENSWEAR,NEW YORK,MEN,"black, brown, red, green, white","plain, abstract",loafers,jackets,"polyester, woollen","classic, formal"
+2012,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"black, white, blue","stripes, plain","pumps, boots","fur, belts, bags","silk, polyester, silk","classic, rich"
+2012,FALL,COUTURE,NEW YORK,WOMEN,"black, white, brown, red","tassels, plain",pumps,"fur, headgear","velvet, chiffon, silk, polyester","mob wife, rich"
+2012,SPRING,COUTURE,PARIS,WOMEN,"green, blue, white, pastel","floral, plain","loafers, pumps",headgear,"mesh, organza, silk, polyester","classic, pop"
+2012,SPRING,READY-TO-WEAR,PARIS,WOMEN,"white, pastel","floral, lacy","stilettos, pumps",bags,"cotton, linen, polyester, mesh","minimalistic, chique"
+2013,FALL,MENSWEAR,NEW YORK,MEN,"black, blue, brown","plain, houndstooth","loafers, sneakers",none,"tuxedo, woollen","rich, classic"
+2013,SPRING,MENSWEAR,PARIS,MEN,"black, brown, blue, white",plain,loafers,none,"polyester, tuxedo, cotton","rich, formal"
+2013,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"black, white, brown","plain, checks, vertical stripes, houndstooth",boots,bags,"woollen, polyester",mob wife
+2013,SPRING,COUTURE,PARIS,WOMEN,"black, white, red, brown","floral, stripes, abstract",pumps,none,"mesh, organza, silk",rich
+2013,SPRING,READY-TO-WEAR,PARIS,WOMEN,"black, yellow, red, blue","checks, abstract, floral",stilettos,"belts, bags","polyester, woollen","rich, classic"
+2013,FALL,COUTURE,NEW YORK,WOMEN,"brown, neon, white, black","plain, embroidery",pumps,headgear,"leather, woollen, polyester","rich, pop"
+2013,RESORT,RESORT,RESORT,WOMEN,"white, brown","abstract, plain","flats, stilettos",none,"cotton, linen, polyester","chique, rich"
+2014,SPRING,MENSWEAR,PARIS,MEN,"black, blue, brown, grey","floral, houndstooth, stripes, plain","leather shoes, loafers","hats, bags","polyester, woollen, tuxedo","rich, pop"
+2014,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"black, pink","houndstooth, animal print","boots, sneakers, wedges","fur,belts, bags","mesh, organza, silk, polyester",classic
+2014,FALL,COUTURE,NEW YORK,WOMEN,"black, white","plain, stripes, animal print","loafers, boots","gold, diamonds","woollen, cotton, silk, polyester",rich
+2014,SPRING,READY-TO-WEAR,PARIS,WOMEN,"blue, black, red","houndstooth, stripes, abstract",boots,none,"polyester, mesh, silk","rich, pop"
+2014,FALL,MENSWEAR,NEW YORK,MEN,"brown, black",plain,"loafers, leather shoes","scarf, bags","tuxedo, woollen, polyester","youth, classic"
+2014,SPRING,COUTURE,PARIS,WOMEN,"white, blue, pink","polka dots, abstract",stilettos,"scarf, headgear, diamonds","mesh, organza, silk",pop
+2014,RESORT,RESORT,RESORT,WOMEN,"white, pastel",plain,"stilettos, flats",bags,"linen, polyester, silk","rich, classic"
+2015,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"black, blue, green, red","abstract, plain","high knee boots, loafers","headgear, bags","silk, polyester","classic, pop"
+2015,SPRING,MENSWEAR,PARIS,MEN,"black, blue, white","abstract, plain","loafers, leather boots","belts, bags","woollen, polyester, tuxedo","pop, youth"
+2015,FALL,FALL 2015,COPENHAGEN,WOMEN,"black, brown","stripes, plain, abstract",boots,fur,"woollen, polyester, tuxedo",mob wife
+2015,FALL,FALL 2015,STOCKHOLM,WOMEN,"black, brown, white","plain, checks",boots,none,"woollen, polyester, tuxedo",mob wife
+2015,SPRING,COUTURE,PARIS,WOMEN,"black, orange, white","abstract, plain","stilettos, boots",headgear,"silk, mesh, polyester, cotton",pop
+2015,FALL,COUTURE,NEW YORK,WOMEN,"black, pink","tassels,plain",pumps,headgear,"mesh, silk, polyester",pop
+2015,FALL,FALL 2015,SEOUL,WOMEN,"black, white",plain,"ballets, flats","socks, belts","woollen, tuxedo, polyester",youth
+2015,SPRING,READY-TO-WEAR,PARIS,WOMEN,"black, white, brown, red, blue","abstract, plain","boots, stilettos","bags, bows","mesh, silk, polyester","pop, youth"
+2015,FALL,FALL 2015,RUSSIA,WOMEN,"black, white, red, green",plain,"boots, stilettos",headgear,"mesh, woollen, polyester",mob wife
+2015,FALL,FALL 2015,TOKYO,WOMEN,"brown, black, grey","plain, houndstooth",boots,"belt, hat","woollen, polyester, tuxedo",youth
+2015,FALL,MENSWEAR,NEW YORK,MEN,"brown, grey, black","vertical stripes, houndstooth, plain","leather shoes, loafers","bags, belts","woollen, tuxedo, polyester","classic, pop"
+2015,FALL,FALL 2015,KIEV,WOMEN,"orange, red, white","stripes, plain, abstract","boots, sneakers",belts,"woollen, cotton, silk, polyester","rich, pop"
+2015,FALL,FALL 2015,ISTANBUL,WOMEN,"pastels, black, orange","plain, stripes",boots,none,"mesh, silk, polyester","pop, youth"
+2015,FALL,FALL 2015,BERLIN,WOMEN,"white, black, green, yellow, blue","abstract, plain",boots,none,"woollen, polyester, tuxedo, silk",youth
+2015,SPRING,PAULO SPRING 2015,SÃO,WOMEN,"white, pastel","abstract, plain","wedges, stilettos","bows, bags","mesh, organza, cotton","chique, rich"
+2015,SPRING,SPRING 2015,AUSTRALIA,WOMEN,"white, pastel","abstract, plain","wedges, stilettos, flats",bows,"mesh, organza, silk","chique, rich"
+2015,RESORT,RESORT,RESORT,WOMEN,"white, pink, black",abstract,"loafers, flats","belts, bags",polyester,"youth, pop"
+2016,FALL,FALL 2016,SEOUL,WOMEN,"black, blue","plain, flowers, stripes, checks",boots,jackets,"polyester, denim, woollen","youth, funk"
+2016,SPRING,SPRING 2016,TBILISI,WOMEN,"black, blue","plain, tassels, flowy","stilettos, sneakers",none,"cotton, denim","classic, minimalistic"
+2016,FALL,FALL 2016,TOKYO,WOMEN,"black, blue, beige, white","plain, checks",sneakers,jackets,"denim, polyester",youth
+2016,SPRING,SPRING 2016,SEOUL,WOMEN,"black, blue, beige, white","stripes, plain","sneakers, flats",jackets,"linen, cotton, polyester",youth
+2016,FALL,FALL 2016,RUSSIA,WOMEN,"black, blue, orange, red",abstract,"sneakers, wedges",bags,"polyester, woollen, silk","rich, mob wife"
+2016,SPRING,SPRING 2016,TOKYO,WOMEN,"black, blue, white, pink","abstract, plain",sneakers,headgear,"linen, cotton, polyester","youth, pop"
+2016,SPRING,READY-TO-WEAR,PARIS,WOMEN,"black, blue, yellow, green, red","abstract, ruffles, floral",flats,bags,"organza, mesh, cotton, polyester",pop
+2016,SPRING,MENSWEAR,PARIS,MEN,"black, brown, beige, white, blue",abstract,"loafers, flats, sneakers","hats, scarf","polyester, cotton, linen","youth, funk"
+2016,FALL,MENSWEAR,NEW YORK,MEN,"black, brown, grey","stripes, plain","leather shoes, boots",scarf,"polyester, woollen, tuxedo","rich, classic, youth"
+2016,FALL,FALL 2016,COPENHAGEN,WOMEN,"black, brown, red, white","plain, stripes","boots, pumps",none,"silk, polyester, woollen","classic, rich"
+2016,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"black, brown, red, white, pink, blue","plain, stripes",pointed pumps,"bags, hats","organza, silk","chique, classic"
+2016,FALL,FALL 2016,SÃO PAULO,WOMEN,"black, brown, white",plain,boots,none,"leather, silk, polyester",youth
+2016,FALL,FALL 2016,UKRAINE,WOMEN,"black, grey, red, orange, white","plain, abstract",boots,none,"polyester, woollen, tuxedo",pop
+2016,SPRING,SPRING 2016,RUSSIA,WOMEN,"black, orange, pink, white","floral, leaves, stripes, plain","stilettos, sneakers",headgear,"cotton, organza, linen",pop
+2016,SPRING,SPRING 2016,COPENHAGEN,WOMEN,"black, white, beige, grey","abstract, plain","loafers, sneakers","headgear, scarf","cotton, linen, polyester, mesh","pop, youth"
+2016,FALL,FALL 2016,BERLIN,WOMEN,"black, white, orange","abstract, animal print",loafers,eyewear,"polyester, woollen","pop, rich"
+2016,RESORT,RESORT,RESORT,WOMEN,"black, white, orange, pink, red","abstract, stripes, floral",pumps,bags,"cotton, polyester",minimalistic
+2016,SPRING,COUTURE,PARIS,WOMEN,"black, white, pastels","plain, floral, abstract, ruffles",boots,"headgear, sunglasses, gold","mesh, organza, lace, cotton",chique
+2016,SPRING,SPRING 2016,BERLIN,WOMEN,"black, white, pink, beige, green","stripes, abstract",stilettos,none,"polyester, linen, cotton, mesh","youth, funk"
+2016,FALL,COUTURE,NEW YORK,WOMEN,"blue, black, red, orange","floral, lace, ruffels","pumps, boots, loafers","gold, silver, bronze","velvet, chiffon, silk, polyester","glam, rich"
+2016,FALL,FALL 2016,KIEV,WOMEN,"blue, brown, white, grey",plain,"stilettos, boots",none,linen,"classic, chique"
+2016,FALL,FALL 2016,STOCKHOLM,WOMEN,"brown, black",plain,boots,jackets,"woollen, tuxedo",classic
+2016,SPRING,SPRING 2016,KIEV,WOMEN,"grey, white, pink, blue","abstract, plain, flowy","ballets, sneakers, stilettos",none,"cotton, linen",minimalistic
+2016,FALL,FALL 2016,TBILISI,WOMEN,"pastel, black, maroon",plain,"loafers, boots",chunky jewelry,"leather, silk, mesh, polyester","minimalistic, chique"
+2016,SPRING,SPRING 2016,STOCKHOLM,WOMEN,"white, blue, pink",plain,"stilettos, flats",none,"cotton, linen, polyester",minimalistic
+2017,SPRING,COUTURE,PARIS,WOMEN,"black, white, pink","abstract, stripes, plain",pumps,bags,"mesh, lace, satin, lace",classic
+2017,FALL,FALL 2017,SEOUL,WOMEN,"beige, brown, white, blue",plain,leather shoes,jackets,"stain, polyester, organza","youth, funk, y2k"
+2017,SPRING,SPRING 2017,SEOUL,WOMEN,"beige, white, blue, pink",plain,"boots, sneakers","sunglasses, headgear","satin, polyester, rayon, nylon","youth, pop"
+2017,SPRING,SPRING 2017,UKRAINE,WOMEN,"black, blue, orange, white","abstract, stripes, plain","loafers, flats, sneakers",none,"silk, polyester, linen","minimalistic, classic"
+2017,FALL,FALL 2017,TOKYO,WOMEN,"black, blue, red, pink, yellow","stripes, abstract","boots, sneakers","jackets, belts, hats","velvet, polyester, satin",youth pop
+2017,RESORT,RESORT,RESORT,WOMEN,"black, brown, grey, rusty","plain, herringbone","pointed pumps, round flats, boots","gold, scarf","woollen, polyester, fleece",mob wife
+2017,SPRING,READY-TO-WEAR,PARIS,WOMEN,"black, brown, lavender, white, yellow, grey",plain,"pointed loafers, boots","shrugs, jackets","linen, polyester, silk","powerful, classic"
+2017,SPRING,SPRING 2017,BERLIN,WOMEN,"black, grey",plain,"square oxfords, boots",none,"silk, tuxedo",academia
+2017,FALL,FALL 2017,COPENHAGEN,WOMEN,"black, red, blue, brown","stripes, checks","boots, sneakers","headgear, belts, bags","polyester, woollen, nylon, silk","rich, funk"
+2017,SPRING,SPRING 2017,TBILISI,WOMEN,"black, red, brown, blue","stripes, plain",boots,none,"leather, polyester",classic
+2017,SPRING,MENSWEAR,PARIS,MEN,"black, white",plain,"slip ons, shoes","vests, jackets","cotton, polyester, silk",youth
+2017,RESORT,RESORT 2017,SÃO PAULO,WOMEN,"black, white","tassels, stripes, abstract","boots, flats",none,"polyester, nylon, sheer","classic, funk"
+2017,SPRING,SPRING 2017,TOKYO,WOMEN,"black, white, beige, blue","plain, tassels",boots,none,"linen, polyester",youth
+2017,SPRING,SPRING 2017,STOCKHOLM,WOMEN,"black, white, grey",plain,"pointed loafers, pointed boots",none,"silk, polyester, tuxedo","silhouette, classy"
+2017,SPRING,SPRING 2017,KIEV,WOMEN,"black, white, grey, blue","checks, stripes, plain","flats, sneakers",masks,"linen, cotton",minimalistic
+2017,SPRING,PAOLO SPRING 2017,SÃO,WOMEN,"black, white, grey, pastel, brown, beige","plain, leaves","stilettos, flats",glitter,"chiffon, polyester, cotton","basic, y2k"
+2017,FALL,FALL 2017,RUSSIA,WOMEN,"black, white, pastel","plain, stripes",boots,headgear,"woollen, polyester","classic, minimalistic"
+2017,FALL,COUTURE,NEW YORK,WOMEN,"black, white, pink, brown","houndstooth, plain","pumps, stilettos","headgear, diamond, gold","satin, mesh, woollen","classic, chique"
+2017,RESORT,RESORT 2017,AUSTRALIA,WOMEN,"black, yellow, white, orange, brown, red, blue",plain,loafers,none,"silk, sheer, flowy",clean girl
+2017,FALL,FALL 2017,TBILISI,WOMEN,"black,red, white",plain,"pumps, sneakers","blazer, bows","leather, nets, linen, mesh",classy
+2017,FALL,FALL 2017,STOCKHOLM,WOMEN,"brown, orange, pink, beige, white","stripes, checks, plain","pointed boots, pointed pumps",belts,"polyester, woollen, nylon, silk","pop, youth, funk"
+2017,FALL,FALL 2017,BERLIN,WOMEN,"brown, orange, pink, beige, white, lavender","stripes, abstract, plain",boots,"belts, bags","rayon, polyester, nylon",funk
+2017,FALL,MENSWEAR,NEW YORK,MEN,"pastel, black, maroon",plain,"canvas, leather shoes, loafers",jackets,"linen, polyester","subtle, basic"
+2017,SPRING,SPRING 2017,COPENHAGEN,WOMEN,"pastel, black, white",plain,"stilettos, pointed flats",none,"cottin, polyester",classy
+2017,FALL,FALL 2017,UKRAINE,WOMEN,"pink, yellow, brown, black","abstract, plain","loafers, sneakers",none,"polyester, silk, woollen","y2k, youth"
+2017,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"red, black, brown, beige, grey","checks, plain, sequin",boots,none,"rayon, nylon, velvet, polyester","classic, funk"
+2017,SPRING,SPRING 2017,RUSSIA,WOMEN,"white, black, orange, green, pink, blue, yellow","floral, abstract, plain","flats, stilettos, sneakers",none,"mesh, polyester, nylon, cotton, denim","youth, pop, funk"
+2017,FALL,FALL 2017,KIEV,WOMEN,"white, green, black, white, grey","checks, stripes, plain, abstract","pointed pumps, sneakers",none,"polyester, rayon, nylon, silk","funk, classic"
+2018,FALL,MENSWEAR,NEW YORK,MEN,"black, blue, brown",plain,loafers,ties,"woollen, tuxedo, polyester","youth, rich"
+2018,FALL,FALL 2018,TBILISI,WOMEN,"black, brown",plain,"boots, stilettos",belts,"leather, polyester",classic
+2018,SPRING,SPRING 2018,STOCKHOLM,WOMEN,"black, brown, white, beige, purple","plain, checks","boots, oxfords",scarf,"tweed, polyester, silk","classic, academia"
+2018,SPRING,SPRING 2018,COPENHAGEN,WOMEN,"black, white, brown , grey","plain, stripes","boots, pumps",coats,"woollen, chiffon , polyester",classic
+2018,SPRING,MENSWEAR,PARIS,MEN,"black, white, grey, brown, beige, pastels","leaves, floral, plain, checks","sneakers, flats",bags,"linen, tuxedo, polyester","rich, classic"
+2018,SPRING,READY-TO-WEAR,PARIS,WOMEN,"black, white, pastels,yellow, green","floral, checks, stripes","sneakers, pumps",bags,"linen, polyester, satin","subtle, rich,"
+2018,SPRING,COUTURE,PARIS,WOMEN,"black, white, yellow, orange, blue","plain, abstract",boots,headgear,"mesh, silk, organza","pop, rich"
+2018,FALL,COUTURE,NEW YORK,WOMEN,"black, yellow, orange, grey","plain, abstract","boots, pumps",none,"woollen, satin, polyester, silk","rich, pop"
+2018,RESORT,RESORT,RESORT,WOMEN,"brown, black, green, yellow, red, beige, pink","checks, floral, lace","boots, oxfords",none,"polyester, mesh, woollen","rich, classic"
+2018,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"brown, white, black","checks, stripes, plain",boots,"hats, fur, belts","polyester, woollen, silk, organza","glam, rich"
+2018,FALL,FALL 2018,COPENHAGEN,WOMEN,"brown, white, red, pink, blue, beige","plain, checks","boots, sneakers","jacket, scarf","leather, woollen, polyester","classic, youth"
+2018,SPRING,SPRING 2018,TOKYO,WOMEN,"green, red, yellow, black, blue",plain,"boots, oxfords",hats,polyester,"youth, classic"
+2018,SPRING,SPRING 2018,SEOUL,WOMEN,"pink, red, yellow, blue, rusty, brown, orange, black","abstract, checks",stilettos,none,"ploster, woollen, satin","glam, rich"
+2018,FALL,FALL 2018,SEOUL,WOMEN,"white, beige, black, grey",plain,boots,"bags, hats","woollen, polyester, tuxedo, satin","classy, minimalistic"
+2018,FALL,FALL 2018,TOKYO,WOMEN,"white, beige, black, grey",plain,pointed pumps,scarf,"woollen, polyester, tuxedo","classy, minimalistic"
+2018,SPRING,SPRING 2018,BERLIN,WOMEN,"white, beige, black, yellow, green","vertical stripes, plain",loafers,"bags, hats","linen, polyester","classic, academia"
+2018,Fall,Fall 2018,Kiev,WOMEN,"white, beige, blue","vertical stripes, plain",loafers,blazers,"polyester, silk, cotton","rich, youth"
+2018,FALL,FALL 2018,STOCKHOLM,WOMEN,"white, black, orange, blue, green","floral, checks, stripes",pointed boots,"scarf, hat","chiffon, polyester, woollen, satin","classic, rich"
+2018,RESORT,RESORT 2018,AUSTRALIA,WOMEN,"white, black, pastel","plain, abstract","ballets, stilettos",bags,"flowy, polyester, cotton, chiffon",pop
+2018,SPRING,SPRING 2018,KIEV,WOMEN,"white, brown,","abstract, plain",stilettos,none,"satin, silk, flowy, polyester","glam, pop"
+2018,SPRING,SPRING 2018,TBILISI,WOMEN,"white, red, blue, black",plain,pointed boots,jacket,"leather, fleece, polyester",glam
+2018,SPRING,SPRING 2018,RUSSIA,WOMEN,"white, red, orange","animal print, floral, polka dots","oxfords, pointed pumps",hats,"organza, polyester, polyester","glam, pop"
+2019,FALL,FALL 2019,STOCKHOLM,WOMEN,"black, blue, white",floral,stilettos,"hats, beads","polyester, silk",basic
+2019,SPRING,COUTURE,PARIS,WOMEN,"black, blue, white, yellow, orange, green","ruffles, abstract","pumps, boots",headgear,"chiffon, silk, polyester, mesh",pop
+2019,SPRING,SPRING 2019,COPENHAGEN,WOMEN,"black, grey",plain,boots,none,"tweed, polyester, woollen","grunge, academia"
+2019,RESORT,RESORT 2019,AUSTRALIA,WOMEN,"black, grey, beige","plain, houndstooth",boots,gold,"silk, tweed, woollen","rich, chique"
+2019,FALL,FALL 2019,MADRID,WOMEN,"black, grey, beige","vertical stripes, checks, plain","loafers, oxfords",belts,"polyester, cotton, linen","pop, rich"
+2019,FALL,FALL 2019,COPENHAGEN,WOMEN,"black, grey, beige, brown",plain,boots,hats,"tweed, polyester, woollen","medieval, ruch"
+2019,SPRING,SPRING 2019,TBILISI,WOMEN,"black, white, blue, red, pink","ruffles, floral, tassels",pumps,"hats,","silk, mesh, polyester, cotton","glam, pop"
+2019,SPRING,SPRING 2019,TOKYO,WOMEN,"black, white, orange, blue","floral, plain","flats, stilettos","bags, hats","woollen, cotton, silk, polyester","basic, pop"
+2019,FALL,COUTURE,NEW YORK,WOMEN,"black, white, yellow, purple","palin, ruffles, abstract","stilettos, pumps, boots",headgear,"silk, woollen, mesh, fur","funk, pop, rich"
+2019,SPRING,READY-TO-WEAR,PARIS,WOMEN,"blue, black, yellow","houndstooth, plain, floral","slip ons, ballet flats",headgear,"cotton, organza, polyester","pop, rich"
+2019,FALL,MENSWEAR,NEW YORK,MEN,"brown, grey, black, white","plain, checks",leather shoes,ties,"tuxedo, woollen, puffer, denim","youth, rich"
+2019,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"brown, grey, black, white, pink","plain, checks, animal print, floral",boots,"headgear, chockers","wollen, tuxedo, polyester","mob wife, rich"
+2019,SPRING,SPRING 2019,KIEV,WOMEN,grey,"puffer, checks",pointed oxfords,vests,"tweed, woollen, polyester",classic
+2019,SPRING,SPRING 2019,STOCKHOLM,WOMEN,"grey, white, black, blue","ruffles, lace",pointed pumps,chunky jewelry,"silk, polyester, organza, chiffon","pop, basic"
+2019,SPRING,MENSWEAR,PARIS,MEN,"red, yellow, white, black","plain, abstract, checks","loafers, canvas",headgear,"cotton, polyester","pop, youth"
+2019,RESORT,RESORT,RESORT,WOMEN,"white, black, red, orange",ruffles,stilettos,"headgear, bags","polyester, flowy, organza",pop rich
+2019,FALL,FALL 2019,TOKYO,WOMEN,"white, blue, pink, beige","ruffles, floral",stilettos,chunky jewelry,"chiffon, silk, polyester","chique, rich"
+2020,SPRING,SPRING 2020,COPENHAGEN,WOMEN,"black, brown, red","checks, abstract","boots, sneaker",none,"leather, polyester","funk, classic"
+2020,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"black, brown, white","plain, stripes","boots, stilettos","headgear, belts","polyester, cotton, tuxedo","rich, classic"
+2020,RESORT,RESORT 2020,AUSTRALIA,WOMEN,"black, pastel, white, yellow, blue, green","ruffles, abstract, floral","stilettos, pumps","bags, bows","chiffon, cotton, polyester, silk","pop, chique"
+2020,FALL,COUTURE,NEW YORK,WOMEN,"black, white, blue, red","plain, ruffles","pumps, stilettos","headgear, sunglasses","silk, polyester, satin","classic, pop"
+2020,SPRING,SPRING 2020,TOKYO,WOMEN,"black, white, blue, yellow","stripes, abstract","stilettos, pumps","bags, gold","silk, polyester, mesh","y2k, pop"
+2020,FALL,MENSWEAR,NEW YORK,MEN,"black, white, brown, pink",plain,leather shoes,jackets,"woollen, silk, tuxedo","classic, rich, youth"
+2020,SPRING,SPRING 2020,MADRID,WOMEN,"black, white, brown, red","checks, plain, abstract",boots,"bags, fur","leather, polyester",pop
+2020,SPRING,COUTURE,PARIS,WOMEN,"black, white, pink, blue","houndstooth, plain, abstract","boots, stilettos",headgear,"mesh, cotton, silk, polyester","youth, pop"
+2020,RESORT,RESORT,RESORT,WOMEN,"grey, blue",houndstooth,boots,belts,"tweed, woollen","classic, rich"
+2020,SPRING,READY-TO-WEAR,PARIS,WOMEN,"orange, yellow, blue, white","polka dots, floral, vertical stripes","wedges, stilettos",none,"mesh, cotton, silk, polyester","youth, pop"
+2020,SPRING,MENSWEAR,PARIS,MEN,"white, beige, brown, orange",plain,"sneakers, slip ons",none,"cotton, linen, mesh, woollen","minimalistic, youth"
+2020,FALL,FALL 2020,TOKYO,WOMEN,"white, black, brown, beige","checks, plain",stilettos,"bags, straps","polyester, cotton, denim","basic, grunge"
+2020,FALL,FALL 2020,MADRID,WOMEN,"yellow, brown, black, white","plain, abstract, stripes","loafers, stilettos","bags, belts","cotton, polyester","basic, soft"
+2021,SPRING,COUTURE,PARIS,WOMEN,"black, white, red","plain, ruffles",stilettos,headgear,"satin, mesh, silk","pop, rich"
+2021,SPRING,READY-TO-WEAR,PARIS,WOMEN,"black, blue",plain,stilettos,masks,"denim, linen, cotton, polyester","classic, low-cut"
+2021,FALL,FALL 2021,BERLIN,WOMEN,"black, blue, brown","plain, houndstooth","loafers, sneakers",none,"tuxedo, woollen","rich, classic"
+2021,RESORT,RESORT,RESORT,WOMEN,"black, blue, brown, grey","floral, houndstooth, stripes, plain","leather shoes, loafers","hats, bags","polyester, woollen, tuxedo","rich, pop"
+2021,FALL,FALL 2021,STOCKHOLM,WOMEN,"black, blue, green, red","floral, lacy",stilettos,none,"polyester, silk",rich
+2021,FALL,FALL 2021,TOKYO,WOMEN,"black, blue, orange, grey","checks, stripes",loafers,hats,"tuxedo, oyster, linen, denim","rich, pop"
+2021,FALL,FALL 2021,ISTANBUL,WOMEN,"black, brown, red, green, white","plain, abstract",loafers,jackets,"polyester, woollen","classic, formal"
+2021,SPRING,SPRING 2021,TOKYO,WOMEN,"black, pink","houndstooth, animal print","boots, sneakers, wedges","fur,belts, bags","mesh, organza, silk, polyester",classic
+2021,FALL,CITY FALL 2021,MEXICO,WOMEN,"black, white, blue","stripes, plain","pumps, boots","fur, belts, bags","silk, polyester, silk","classic, rich"
+2021,FALL,FALL 2021,COPENHAGEN,WOMEN,"black, white, brown","plain, checks, vertical stripes, houndstooth",boots,bags,"woollen, polyester",mob wife
+2021,FALL,COUTURE,NEW YORK,WOMEN,"black, white, red, pink, grey","plain, stripes, houndstooth",boots,headgear,"woollen, silt, mesh","rich, classic"
+2021,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"blue, beige, black",plain,boots,"bags, belts, gold","woollen, tuxedo, velvet, cotton","classic, rich"
+2021,FALL,MENSWEAR,NEW YORK,MEN,"blue, beige, black, white",plain,loafers,none,"tuxedo, woollen, chiffon","classic, rich"
+2021,SPRING,SPRING 2021,COPENHAGEN,WOMEN,"blue, black, red","houndstooth, stripes, abstract",boots,none,"polyester, mesh, silk","rich, pop"
+2021,SPRING,SPRING 2021,STOCKHOLM,WOMEN,"brown, black",plain,"loafers, leather shoes","scarf, bags","tuxedo, woollen, polyester","youth, classic"
+2021,SPRING,SPRING 2021,ISTANBUL,WOMEN,"white, brown","abstract, plain","flats, stilettos",none,"cotton, linen, polyester","chique, rich"
+2021,SPRING,MENSWEAR,PARIS,MEN,"white, grey, black",plain,"leather shoes, sneakers",none,"polyester, tuxedo, cotton","rich, formal"
+2021,FALL,FALL 2021,MADRID,WOMEN,"white, pastel","floral, lacy","stilettos, pumps",bags,"cotton, linen, polyester, mesh","minimalistic, chique"
+2021,RESORT,MENSWEAR,RESORT,MEN,"white, pastel",plain,"stilettos, flats",bags,"linen, polyester, silk","rich, classic"
+2022,SPRING,READY-TO-WEAR,PARIS,WOMEN,"beige, black, brown","abstract, plain","slip ons, ballet flats","sunglasses, headgear","silk, cotton, polyester","mob wife, youth"
+2022,SPRING,SPRING 2022,COPENHAGEN,WOMEN,"black, blue","plain, flowers, stripes, checks",boots,jackets,"polyester, denim, woollen","youth, funk"
+2022,SPRING,SPRING 2022,BERLIN,WOMEN,"black, blue, white","abstract, plain","loafers, leather boots","belts, bags","woollen, polyester, tuxedo","pop, youth"
+2022,RESORT,CITY RESORT 2022,MEXICO,WOMEN,"black, brown","stripes, plain, abstract",boots,fur,"woollen, polyester, tuxedo",mob wife
+2022,RESORT,MENSWEAR,RESORT,MEN,"black, brown, red, white, pink, blue","plain, stripes",pointed pumps,"bags, hats","organza, silk","chique, classic"
+2022,SPRING,CITY SPRING 2022,MEXICO,WOMEN,"black, brown, white","plain, checks",boots,none,"woollen, polyester, tuxedo",mob wife
+2022,RESORT,RESORT 2022,AUSTRALIA,WOMEN,"black, grey, red, orange, white","plain, abstract",boots,none,"polyester, woollen, tuxedo",pop
+2022,FALL,FALL 2022,TOKYO,WOMEN,"black, white",plain,"ballets, flats","socks, belts","woollen, tuxedo, polyester",youth
+2022,SPRING,SPRING 2022,MADRID,WOMEN,"black, white, brown, red, blue","abstract, plain","boots, stilettos","bags, bows","mesh, silk, polyester","pop, youth"
+2022,SPRING,COUTURE,PARIS,WOMEN,"black, white, grey","floral, stripes",boots,hats,"woollen, silk, polyester","rich, classic"
+2022,FALL,FALL 2022,BERLIN,WOMEN,"black, white, red, green",plain,"boots, stilettos",headgear,"mesh, woollen, polyester",mob wife
+2022,FALL,COUTURE,NEW YORK,WOMEN,"black, white, red, green",plain,pointed pumps,"bags, hats","woollen, silk, polyester",chique
+2022,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"black, yellow, pink","plain, stripes, checks, ruffles","boots, pumps","jackets, headgear","leather, mesh, linen, woollen","classic, rich, pop"
+2022,RESORT,RESORT,RESORT,WOMEN,"blue, brown, white, grey",plain,"stilettos, boots",none,linen,"classic, chique"
+2022,FALL,FALL 2022,STOCKHOLM,WOMEN,"brown, black, grey","plain, houndstooth",boots,"belt, hat","woollen, polyester, tuxedo",youth
+2022,FALL,MENSWEAR,NEW YORK,MEN,"brown, black, pink, grey","plain, checks",leather shoes,"jackets, headgear","woollen, tuxedo",classic
+2022,FALL,FALL 2022,MADRID,WOMEN,"orange, red, white","stripes, plain, abstract","boots, sneakers",belts,"woollen, cotton, silk, polyester","rich, pop"
+2022,SPRING,SPRING 2022,TOKYO,WOMEN,"pastel, black, maroon",plain,"loafers, boots",chunky jewelry,"leather, silk, mesh, polyester","minimalistic, chique"
+2022,FALL,FALL 2022,COPENHAGEN,WOMEN,"pastels, black, orange","plain, stripes",boots,none,"mesh, silk, polyester","pop, youth"
+2022,SPRING,MENSWEAR,PARIS,MEN,"white, beige","abstract, plain","loafers, slip ons",headgear,"tuxedo, cotton, woollen",youth
+2022,SPRING,SPRING 2022,SHANGHAI,WOMEN,"white, black, green, yellow, blue","abstract, plain",boots,none,"woollen, polyester, tuxedo, silk",youth
+2022,FALL,FALL 2022,SHANGHAI,WOMEN,"white, pastel","abstract, plain","wedges, stilettos","bows, bags","mesh, organza, cotton","chique, rich"
+2022,FALL,CITY FALL 2022,MEXICO,WOMEN,"white, pastel","abstract, plain","wedges, stilettos, flats",bows,"mesh, organza, silk","chique, rich"
+2022,SPRING,SPRING 2022,STOCKHOLM,WOMEN,"white, pink, black",abstract,"loafers, flats","belts, bags",polyester,"youth, pop"
+2023,SPRING,MENSWEAR,PARIS,MEN,"black, beige, yellow, brown","abstract, plain","leather shoes, slip ons, sneakers","jackets, headgear","tuxedo, denim, chiffon","hip-hop, sexy"
+2023,FALL,FALL 2023,SHANGHAI,WOMEN,"black, blue","plain, tassels, flowy","stilettos, sneakers",none,"cotton, denim","classic, minimalistic"
+2023,FALL,FALL 2023,COPENHAGEN,WOMEN,"black, blue, beige, white","stripes, plain","sneakers, flats",jackets,"linen, cotton, polyester",youth
+2023,RESORT,RESORT,RESORT,WOMEN,"black, blue, red",straps,boots,gloves,"leather, velvet, sheer","sophisticated, strong"
+2023,FALL,FALL 2023,BERLIN,WOMEN,"black, blue, white, pink","abstract, plain",sneakers,headgear,"linen, cotton, polyester","youth, pop"
+2023,SPRING,SPRING 2023,SHANGHAI,WOMEN,"black, blue, yellow, green, red","abstract, ruffles, floral",flats,bags,"organza, mesh, cotton, polyester",pop
+2023,FALL,FALL 2023,MADRID,WOMEN,"black, brown, grey","stripes, plain","leather shoes, boots",scarf,"polyester, woollen, tuxedo","rich, classic, youth"
+2023,RESORT,RESORT,RESORT,WOMEN,"black, brown, white",plain,boots,none,"leather, silk, polyester",youth
+2023,SPRING,READY-TO-WEAR,PARIS,WOMEN,"black, grey, beige","plain, abstract","loafers, stilettos","headgear, jackets, diamonds, chockers",polyester,"modest, pop"
+2023,SPRING,SPRING 2023,MEXICO,WOMEN,"black, grey, red, beige","crunched waist, vertical stripes","pumps, high knee boots, pointed heels",stalkings,"fur, satin","tomboy, powerful"
+2023,FALL,FALL 2023,TOKYO,WOMEN,"black, orange, pink, white","floral, leaves, stripes, plain","stilettos, sneakers",headgear,"cotton, organza, linen",pop
+2023,FALL,COUTURE,NEW YORK,WOMEN,"black, white, beige",plain,"boots, pumps",none,"woollen, cotton, tuxedo","classic, chique"
+2023,SPRING,SPRING 2023,TOKYO,WOMEN,"black, white, beige, grey","abstract, plain","loafers, sneakers","headgear, scarf","cotton, linen, polyester, mesh","pop, youth"
+2023,FALL,FALL 2023,MEXICO,WOMEN,"black, white, orange","abstract, animal print",loafers,eyewear,"polyester, woollen","pop, rich"
+2023,SPRING,SPRING 2023,STOCKHOLM,WOMEN,"black, white, orange, pink, red","abstract, stripes, floral",pumps,bags,"cotton, polyester",minimalistic
+2023,SPRING,COUTURE,PARIS,WOMEN,"black, white, pastels","palin, ruffles","pumps, stilettos",headgear,"organza, mesh, polyester","rich, classic, youth"
+2023,SPRING,SPRING 2023,COPENHAGEN,WOMEN,"black, yellow, white",plain,pointed boots,gloves,"woollen, velvet","modest, workforce"
+2023,RESORT,MENSWEAR,RESORT,MEN,"green, white","abstract, vertical stripes","ballet flats, loafers","shrugs, jackets, beads, big belts","mesh, satin","classy, splashy"
+2023,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"grey, black",plain,pointed pumps,bags,"mesh, linen, tuxedo, polyester","low-cut, youth"
+2023,SPRING,SPRING 2023,MADRID,WOMEN,"grey, white, pink, blue","abstract, plain, flowy","ballets, sneakers, stilettos",none,"cotton, linen",minimalistic
+2023,RESORT,RESORT 2023,AUSTRALIA,WOMEN,"neons, yellow, pink, orange, black, white","polka dots, stripes, checks","stilettos, flats",headgear,"khaki, cotton, flowy, sheer, mesh",pop
+2023,SPRING,SPRING 2023,BERLIN,WOMEN,"white, blue, pink",plain,"stilettos, flats",none,"cotton, linen, polyester",minimalistic
+2024,SPRING,SPRING 2024,MEXICO,WOMEN,black,plain,pointed boots,"gloves, headbands","woollen, leather",classic
+2024,FALL,MENSWEAR,NEW YORK,MEN,"black, brown, beige","plain, checks",leather shoes,"jackets, headgear","woollen, tuxedo","classic, rich"
+2024,SPRING,SPRING 2024,SHANGHAI,WOMEN,"black, brown, blue, maroon, red, yellow","animal print, floral, fishnets","stilettos, flats",small handbags,"mesh, velvet, silk, linen","bossy, mob wife"
+2024,SPRING,SPRING 2024,LAGOS,WOMEN,"black, brown, lavender, maroon, purple, red",plain,"square toe heels, loafers",none,"tweed, velvet","mob wife, professional"
+2024,SPRING,MENSWEAR,PARIS,MEN,"black, brown, white, grey","plain, stripes","loafers, sneakers","jackets, belts, bags","linen, cotton","powerful, classic, youth"
+2024,RESORT,MENSWEAR,RESORT,MEN,"black, grey, green","plain, checks , floral",boots,"chockers, bags","tuxedo, lien, cotton, woollen","academia, pop"
+2024,SPRING,SPRING 2024,TOKYO,WOMEN,"black, white, beige","plain, fishnet",square toe oxfords,none,"mesh, linen, polyester","classic, minimalistic"
+2024,SPRING,COUTURE,PARIS,WOMEN,"black, white, beige","plain, ruffles","pumps, stilettos, flats",diamond,"wollen, satin, mesh",chique
+2024,RESORT,RESORT 2024,AUSTRALIA,WOMEN,"black, white, beige, green, blue","plain, floral","stilettos, flats",none,"chiffon, organza, polyester","classic, rich"
+2024,FALL,READY-TO-WEAR,NEW YORK,WOMEN,"black, white, black, brown",plain,boots,"jacket, bags","leather, tuxedo. linen, organza","simple, rich"
+2024,SPRING,SPRING 2024,BERLIN,WOMEN,"black, white, grey",plain,"pointed loafers, pointed boots",none,"silk, polyester, tuxedo","silhouette, classy"
+2024,SPRING,READY-TO-WEAR,PARIS,WOMEN,"black, white, pink","plain, floral","boots, pumps","bags, belts","cotton, polyester, silk","classy, simple"
+2024,FALL,FALL 2024,TOKYO,WOMEN,"black, white, red, brown","vertical stripes, abstract, ruffles","barefoot, shoes, chunky heels",none,"denim,cotton, flowy, mesh","pop, summer"
+2024,FALL,FALL 2024,COPENHAGEN,WOMEN,"black, white, red, yellow","loosely fit, checks","square toe boots, loafers","fur, gold, bows, buttons",fur,chique
+2024,SPRING,SPRING 2024,SPAIN,WOMEN,"pastel, brown, white, black, yellow","checks, vertical stripes, plain",ballets,"sunglasses, headgear","sheer, polyester","simple, professional"
+2024,FALL,FALL 2024,BERLIN,WOMEN,"red, yellow, white, black, pastel","stripes, leaves, checks, abstract","sports shoes, ballets","big chokers, beads, corsets, tassels","mesh, flannel","thrift, sportswear, cool, classy"
