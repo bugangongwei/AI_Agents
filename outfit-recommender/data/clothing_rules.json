@@ -1,0 +1,44 @@
+{
+  "rules": [
+    {
+      "temperature_min": 25,
+      "temperature_max": 35,
+      "weather": "sunny",
+      "schedule": "casual",
+      "preference": "casual",
+      "outfit": "T-shirt, shorts, and sandals"
+    },
+    {
+      "temperature_min": 15,
+      "temperature_max": 25,
+      "weather": "cloudy",
+      "schedule": "work",
+      "preference": "formal",
+      "outfit": "Button-up shirt, trousers, and loafers"
+    },
+    {
+      "temperature_min": 5,
+      "temperature_max": 15,
+      "weather": "rainy",
+      "schedule": "outdoor",
+      "preference": "sporty",
+      "outfit": "Jacket, waterproof pants, and sneakers"
+    },
+    {
+      "temperature_min": -5,
+      "temperature_max": 5,
+      "weather": "snowy",
+      "schedule": "casual",
+      "preference": "warm",
+      "outfit": "Heavy coat, scarf, gloves, and boots"
+    },
+    {
+      "temperature_min": 20,
+      "temperature_max": 30,
+      "weather": "sunny",
+      "schedule": "formal",
+      "preference": "elegant",
+      "outfit": "Blouse, skirt, and heels"
+    }
+  ]
+}
