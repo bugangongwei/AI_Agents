@@ -5,10 +5,11 @@ LangChain + 本地BGE Embedding + 本地Milvus + DeepSeek API + 国内数据源�
 
 ## Features
 
+- HTTP REST API for agent services
 - Modular agent architecture
-- Easy-to-extend framework for adding new agents
-- Command-line interface for running agents
-- Integration with external APIs (weather, calendar, LLM, etc.)
+- Integration with external APIs (weather, LLM, vector database)
+- Pre-loaded knowledge base for efficient querying
+- IP-based location detection (planned)
 
 ## Installation
 
@@ -25,38 +26,56 @@ LangChain + 本地BGE Embedding + 本地Milvus + DeepSeek API + 国内数据源�
 
 ## Usage
 
-Run the main program with an agent name and its arguments:
+### Starting the Server
+
+Build and run the HTTP server:
 
 ```bash
-go run . <agent-name> [args...]
+go build -o main.out
+./main.out
 ```
 
-For help:
-```bash
-go run . --help
-```
+The server will start on port 8080 and automatically load clothing rules into the vector database.
 
-### Available Agents
+### API Endpoints
 
 #### Outfit Recommender
-Recommends daily outfits based on weather, schedule, user preferences, and input using AI.
+Recommends daily outfits based on user questions, weather data, and clothing rules using AI.
 
-**Usage:**
+**Endpoint:** `GET /ai_agents/outfit_recommend`
+
+**Parameters:**
+- `question` (required): User's question about outfit preferences
+- `pref` (optional): Style preference (casual, formal, sporty, elegant), defaults to "casual"
+
+**Headers:**
+- `X-Forwarded-For`: Client IP address for location detection (planned feature)
+
+**Example Request:**
 ```bash
-go run . outfit-recommender -input "<user description>" -pref <style> -loc "<city>"
+curl "http://localhost:8080/ai_agents/outfit_recommend?question=What%20should%20I%20wear%20today&pref=casual"
 ```
 
-- `-input`: Text describing your preferences (e.g., "I like blue colors")
-- `-pref`: Style preference (casual, formal, sporty, elegant)
-- `-loc`: City name for weather data (e.g., "Beijing")
+**Response:**
+```json
+{
+  "recommendation": "Based on today's weather and your preferences..."
+}
+```
 
 ## Project Structure
 
-- `main.go`: Entry point and agent dispatcher
-- `outfit-recommender/`: Outfit recommender agent
-  - `start.go`: Main logic
-  - `tools/`: Utility tools (weather, calendar, LLM, vector)
-  - `data/`: Data files (clothing rules)
+- `main.go`: HTTP server entry point and API handlers
+- `outfit-recommender/`: Outfit recommender service
+  - `start.go`: Core recommendation logic
+  - `tools/`: Utility modules
+    - `weather_tool.go`: Weather API integration
+    - `llm_tool.go`: DeepSeek API client
+    - `vector_tool.go`: Milvus vector database operations
+    - `calendar_tool.go`: Calendar integration (legacy)
+  - `data/`: Static data files
+    - `clothing_rules.json`: Outfit recommendation rules
+  - `.env`: Environment configuration
 
 ## Adding New Agents
 
@@ -68,9 +87,10 @@ go run . outfit-recommender -input "<user description>" -pref <style> -loc "<cit
 ## Dependencies
 
 - [github.com/joho/godotenv](https://github.com/joho/godotenv) - Environment variable loading
-- [github.com/sashabaranov/go-openai](https://github.com/sashabaranov/go-openai) - OpenAI API client
-- [github.com/tmc/langchaingo](https://github.com/tmc/langchaingo) - LangChain for Go
-- Google APIs for calendar and other services
+- [github.com/sashabaranov/go-openai](https://github.com/sashabaranov/go-openai) - OpenAI API client (used for DeepSeek)
+- [github.com/milvus-io/milvus-sdk-go/v2](https://github.com/milvus-io/milvus-sdk-go) - Milvus vector database client
+- QWeather API for weather data
+- DeepSeek API for LLM recommendations
 
 ## Contributing
 

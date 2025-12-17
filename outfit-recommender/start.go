@@ -7,7 +7,6 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
-	"strings"
 
 	"outfit-recommender/outfit-recommender/tools"
 )
@@ -29,95 +28,81 @@ type Rules struct {
 	Rules []ClothingRule `json:"rules"`
 }
 
-func Start(args []string) {
-	// Set up flags with provided args
-	oldArgs := os.Args
-	os.Args = append([]string{"start"}, args...)
-	defer func() { os.Args = oldArgs }()
-	userInput := flag.String("input", "", "User input text")
-	preference := flag.String("pref", "casual", "User preference (e.g., casual, formal)")
-	location := flag.String("loc", "Beijing", "Location for weather")
-	flag.Parse()
-
-	if *userInput == "" {
-		log.Fatal("User input is required")
-	}
-
-	// Load rules
+func LoadClothingRules() error {
 	rulesData, err := ioutil.ReadFile("outfit-recommender/data/clothing_rules.json")
 	if err != nil {
-		log.Fatal(err)
+		return fmt.Errorf("failed to load rules: %v", err)
 	}
 	var rules Rules
 	json.Unmarshal(rulesData, &rules)
 
 	// Store rules in vector database
 	for _, rule := range rules.Rules {
-		ruleText := fmt.Sprintf("Clothing rule: If temperature %d-%d°C, weather %s, schedule %s, preference %s: %s", rule.TemperatureMin, rule.TemperatureMax, rule.Weather, rule.Schedule, rule.Preference, rule.Outfit)
-		err = tools.EmbedAndStore(ruleText)
+		ruleText := fmt.Sprintf("Temperature %d-%d°C, weather %s, preference %s: %s", rule.TemperatureMin, rule.TemperatureMax, rule.Weather, rule.Preference, rule.Outfit)
+		err = tools.EmbedAndStoreRule(ruleText, rule.TemperatureMin, rule.TemperatureMax, rule.Weather, rule.Preference, rule.Outfit)
 		if err != nil {
 			log.Printf("Error storing rule: %v", err)
 		}
 	}
+	return nil
+}
+
+func Start(args []string) (string, error) {
+	// Set up flags with provided args
+	oldArgs := os.Args
+	os.Args = append([]string{"start"}, args...)
+	defer func() { os.Args = oldArgs }()
+	userInput := flag.String("question", "", "User question text")
+	preference := flag.String("pref", "casual", "User preference (e.g., casual, formal)")
+	location := flag.String("loc", "Beijing", "Location for weather")
+	flag.Parse()
+
+	if *userInput == "" {
+		return "", fmt.Errorf("user question is required")
+	}
 
 	// Get weather
-	temp, weather, err := tools.GetWeather(*location)
+	avgTemp, _, _, weather, err := tools.GetWeather(*location)
 	if err != nil {
 		log.Printf("Error getting weather: %v, using defaults", err)
-		temp = 20
+		avgTemp = 20
 		weather = "sunny"
 	}
 
-	// Get schedule
-	schedule, err := tools.GetTodaySchedule()
+	// Search for similar clothing rules in Milvus
+	clothingRules, err := tools.SearchSimilar(*userInput, avgTemp, weather, *preference, 3)
 	if err != nil {
-		log.Printf("Error getting schedule: %v, using default", err)
-		schedule = "No events"
+		log.Printf("Error searching similar rules: %v", err)
+		clothingRules = []string{}
 	}
 
-	// Get similar preferences
-	similar, err := tools.SearchSimilar(*userInput, 3)
-	similarStr := ""
-	if err == nil && len(similar) > 0 {
-		similarStr = "Similar past preferences and recommendations:\n"
-		for _, s := range similar {
-			similarStr += "- " + s + "\n"
-		}
-	}
-
-	// Build prompt
+	// Combine rules into a string
 	rulesStr := ""
-	for _, rule := range rules.Rules {
-		rulesStr += fmt.Sprintf("If temp %d-%d°C, weather %s, schedule %s, pref %s: %s\n", rule.TemperatureMin, rule.TemperatureMax, rule.Weather, rule.Schedule, rule.Preference, rule.Outfit)
+	for _, rule := range clothingRules {
+		rulesStr += rule + "\n"
 	}
 
-	prompt := fmt.Sprintf("Based on the following information, recommend today's outfit:\n\nWeather: %s, Temperature: %.1f°C\nSchedule: %s\nUser preference: %s\nUser input: %s\n\nClothing rules:\n%s\n\n%s\nProvide a personalized outfit recommendation.", weather, temp, schedule, *preference, *userInput, rulesStr, similarStr)
+	// Build prompt with question and rules
+	prompt := fmt.Sprintf("User question: %s\n\nRelevant clothing rules:\n%s\n\nProvide a personalized outfit recommendation based on the question and rules.", *userInput, rulesStr)
 
 	// Get LLM recommendation
 	recommendation, err := tools.GetLLMRecommendation(prompt)
 	if err != nil {
-		log.Printf("Error getting LLM recommendation: %v, using rule-based", err)
-		// Fallback to simple rule matching
-		recommendation = matchRule(rules.Rules, int(temp), weather, schedule, *preference)
+		log.Printf("Error getting LLM recommendation: %v", err)
+		recommendation = "Unable to generate recommendation"
 	}
 
-	fmt.Println("Outfit Recommendation:", recommendation)
-
-	// Store the preference and recommendation for future use
-	err = tools.StorePreference(*userInput, recommendation)
-	if err != nil {
-		log.Printf("Error storing preference: %v", err)
-	}
+	return recommendation, nil
 }
 
-func matchRule(rules []ClothingRule, temp int, weather, schedule, pref string) string {
-	for _, rule := range rules {
-		if temp >= rule.TemperatureMin && temp <= rule.TemperatureMax &&
-			strings.ToLower(weather) == strings.ToLower(rule.Weather) &&
-			strings.Contains(strings.ToLower(schedule), strings.ToLower(rule.Schedule)) &&
-			strings.ToLower(pref) == strings.ToLower(rule.Preference) {
-			return rule.Outfit
-		}
-	}
-	return "T-shirt and jeans" // default
-}
+// func matchRule(rules []ClothingRule, temp int, weather, schedule, pref string) string {
+// 	for _, rule := range rules {
+// 		if temp >= rule.TemperatureMin && temp <= rule.TemperatureMax &&
+// 			strings.ToLower(weather) == strings.ToLower(rule.Weather) &&
+// 			strings.Contains(strings.ToLower(schedule), strings.ToLower(rule.Schedule)) &&
+// 			strings.ToLower(pref) == strings.ToLower(rule.Preference) {
+// 			return rule.Outfit
+// 		}
+// 	}
+// 	return "T-shirt and jeans" // default
+// }
