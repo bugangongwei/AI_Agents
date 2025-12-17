@@ -17,6 +17,11 @@ type WeatherResponse struct {
 		Temp string `json:"temp"`
 		Text string `json:"text"`
 	} `json:"now"`
+	Daily []struct {
+		TempMax string `json:"tempMax"`
+		TempMin string `json:"tempMin"`
+		TextDay string `json:"textDay"`
+	} `json:"daily"`
 }
 
 var cityIDs = map[string]string{
@@ -32,15 +37,15 @@ var cityIDs = map[string]string{
 	"Xi'an":     "101110101",
 }
 
-func GetWeather(location string) (temperature float64, weather string, err error) {
+func GetWeather(location string) (avgTemp, maxTemp, minTemp float64, weather string, err error) {
 	err = godotenv.Load("outfit-recommender/.env")
 	if err != nil {
-		return 0, "", fmt.Errorf("error loading .env file: %v", err)
+		return 0, 0, 0, "", fmt.Errorf("error loading .env file: %v", err)
 	}
 
 	apiKey := os.Getenv("WEATHER_API_TOKEN")
 	if apiKey == "" {
-		return 0, "", fmt.Errorf("WEATHER_API_TOKEN not set")
+		return 0, 0, 0, "", fmt.Errorf("WEATHER_API_TOKEN not set")
 	}
 
 	cityID, exists := cityIDs[location]
@@ -48,39 +53,49 @@ func GetWeather(location string) (temperature float64, weather string, err error
 		cityID = location // fallback to direct use, assuming it's already an ID
 	}
 
-	url := fmt.Sprintf("https://api.qweather.com/v7/weather/now?location=%s&key=%s", cityID, apiKey)
+	url := fmt.Sprintf("https://api.qweather.com/v7/weather/3d?location=%s&key=%s", cityID, apiKey)
 
 	resp, err := http.Get(url)
 	if err != nil {
-		return 0, "", err
+		return 0, 0, 0, "", err
 	}
 	defer resp.Body.Close()
 
 	if resp.StatusCode != 200 {
-		return 0, "", fmt.Errorf("API request failed with status %d", resp.StatusCode)
+		return 0, 0, 0, "", fmt.Errorf("API request failed with status %d", resp.StatusCode)
 	}
 
 	body, err := io.ReadAll(resp.Body)
 	if err != nil {
-		return 0, "", err
+		return 0, 0, 0, "", err
 	}
 
 	var weatherResp WeatherResponse
 	err = json.Unmarshal(body, &weatherResp)
 	if err != nil {
-		return 0, "", err
+		return 0, 0, 0, "", err
 	}
 
 	if weatherResp.Code != "200" {
-		return 0, "", fmt.Errorf("API request failed with code %s", weatherResp.Code)
+		return 0, 0, 0, "", fmt.Errorf("API request failed with code %s", weatherResp.Code)
 	}
 
-	tempFloat, err := strconv.ParseFloat(weatherResp.Now.Temp, 64)
+	if len(weatherResp.Daily) == 0 {
+		return 0, 0, 0, "", fmt.Errorf("no daily weather data")
+	}
+
+	tempMax, err := strconv.ParseFloat(weatherResp.Daily[0].TempMax, 64)
 	if err != nil {
-		return 0, "", err
+		return 0, 0, 0, "", err
 	}
-	temperature = tempFloat
-	weather = weatherResp.Now.Text
+	tempMin, err := strconv.ParseFloat(weatherResp.Daily[0].TempMin, 64)
+	if err != nil {
+		return 0, 0, 0, "", err
+	}
+	avgTemp = (tempMax + tempMin) / 2
+	maxTemp = tempMax
+	minTemp = tempMin
+	weather = weatherResp.Daily[0].TextDay
 
-	return temperature, weather, nil
+	return avgTemp, maxTemp, minTemp, weather, nil
 }
