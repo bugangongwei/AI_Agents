@@ -1,6 +1,6 @@
 # 阶段 1: 构建阶段 (Builder Stage)
 # 这个基础镜像已经设置了 GOROOT 和 GOPATH
-FROM golang:1.21-alpine AS builder
+FROM golang:1.24-alpine AS builder
 
 # 1. 设置工作目录
 WORKDIR /app
@@ -23,7 +23,9 @@ FROM alpine:latest
 WORKDIR /root/
 # 复制构建阶段生成的二进制文件
 COPY --from=builder /outfit-agent .
+# 复制配置文件和数据
+COPY --from=builder /app/outfit-recommender outfit-recommender
 
 # 暴露端口，运行应用程序
-EXPOSE 8080
+EXPOSE 8081
 CMD ["./outfit-agent"]
