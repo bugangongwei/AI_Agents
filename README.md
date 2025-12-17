@@ -28,6 +28,8 @@ LangChain + 本地BGE Embedding + 本地Milvus + DeepSeek API + 国内数据源�
 
 ### Starting the Server
 
+#### Option 1: Run with Go
+
 Build and run the HTTP server:
 
 ```bash
@@ -35,7 +37,18 @@ go build -o main.out
 ./main.out
 ```
 
-The server will start on port 8080 and automatically load clothing rules into the vector database.
+The server will start on port 8081 and automatically load clothing rules into the vector database.
+
+#### Option 2: Run with Docker
+
+Build and run using Docker:
+
+```bash
+docker build -t ai-agents:latest .
+docker run -p 8081:8081 ai-agents:latest
+```
+
+Note: Ensure the embedding API (port 8000) and Milvus (port 19530) are running separately.
 
 ### API Endpoints
 
@@ -53,13 +66,33 @@ Recommends daily outfits based on user questions, weather data, and clothing rul
 
 **Example Request:**
 ```bash
-curl "http://localhost:8080/ai_agents/outfit_recommend?question=What%20should%20I%20wear%20today&pref=casual"
+curl "http://localhost:8081/ai_agents/outfit_recommend?question=What%20should%20I%20wear%20today&pref=casual"
 ```
 
 **Response:**
 ```json
 {
   "recommendation": "Based on today's weather and your preferences..."
+}
+```
+
+#### Embedding API
+Provides text embeddings using local BGE model.
+
+**Endpoint:** `GET /embed`
+
+**Parameters:**
+- `texts` (required, multiple): Text strings to embed
+
+**Example Request:**
+```bash
+curl "http://localhost:8000/embed?texts=hello&texts=world"
+```
+
+**Response:**
+```json
+{
+  "embeddings": [[0.1, 0.2, ...], [0.3, 0.4, ...]]
 }
 ```
 
@@ -99,3 +132,38 @@ Contributions are welcome! Please fork the repository and submit a pull request.
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+````
+# 1. 进入项目目录
+cd /path/to/your/project
+
+# 2. 启动所有服务（后台运行）
+docker-compose up -d
+
+# 3. 查看运行状态
+docker-compose ps
+
+# 4. 查看日志
+docker-compose logs           # 所有服务日志
+docker-compose logs myapp     # 只看myapp日志
+docker-compose logs -f milvus # 实时查看milvus日志
+# 查看完整的错误日志
+docker logs --tail 100 milvus-standalone
+# 或者使用docker-compose
+docker-compose logs --tail 100 milvus
+
+# 5. 停止服务
+docker-compose stop           # 停止但不删除容器
+docker-compose down           # 停止并删除容器
+docker-compose down -v        # 停止并删除容器和卷
+
+# 6. 重启服务
+docker-compose restart
+
+# 7. 重建并启动（代码更新后）
+docker-compose up -d --build
+
+# 8. 进入容器
+docker-compose exec myapp sh  # 进入myapp容器
+docker-compose exec milvus bash  # 进入milvus容器
+````

@@ -1,0 +1,81 @@
+version: '3.8'
+
+services:
+  # 1. etcd - 分布式键值存储
+  etcd:
+    container_name: milvus-etcd
+    image: quay.io/coreos/etcd:v3.5.5
+    environment:
+      - ETCD_AUTO_COMPACTION_MODE=revision
+      - ETCD_AUTO_COMPACTION_RETENTION=1000
+      - ETCD_QUOTA_BACKEND_BYTES=4294967296
+    volumes:
+      - ./volumes/etcd:/etcd  # ⭐ 官方指定的路径
+    command: >
+      etcd -advertise-client-urls=http://127.0.0.1:2379
+      -listen-client-urls=http://0.0.0.0:2379
+      --data-dir /etcd
+    healthcheck:
+      test: ["CMD", "etcdctl", "endpoint", "health"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+
+  # 2. MinIO - 对象存储
+  minio:
+    container_name: milvus-minio
+    image: minio/minio:RELEASE.2023-03-20T20-16-18Z
+    environment:
+      MINIO_ACCESS_KEY: minioadmin
+      MINIO_SECRET_KEY: minioadmin
+    volumes:
+      - ./volumes/minio:/minio_data  # ⭐ 官方指定的路径
+    command: minio server /minio_data --console-address ":9091"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+
+  # 3. Milvus - 向量数据库
+  milvus:
+    container_name: milvus-standalone
+    image: milvusdb/milvus:v2.3.3
+    command: ["milvus", "run", "standalone"]
+    environment:
+      ETCD_ENDPOINTS: etcd:2379
+      MINIO_ADDRESS: minio:9000
+    volumes:
+      - ./volumes/milvus:/var/lib/milvus  # ⭐ 官方指定的路径
+    ports:
+      - "19530:19530"   # Milvus服务端口
+      - "9091:9091"     # 监控端口
+    depends_on:
+      etcd:
+        condition: service_healthy
+      minio:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9091/healthz"]
+      interval: 30s
+      timeout: 30s
+      retries: 5
+
+  # 4. 你的Go应用
+  ai_agents_api:
+    build: .
+    container_name: ai_agents_api
+    environment:
+      - MILVUS_HOST=milvus
+      - MILVUS_PORT=19530
+      - APP_ENV=docker
+    ports:
+      - "8081:8081"
+    depends_on:
+      milvus:
+        condition: service_healthy
+    volumes:
+      - ./:/app  # 开发时挂载代码，热重载
+    restart: unless-stopped
+
+# 不需要显式定义网络，Docker Compose会自动创建

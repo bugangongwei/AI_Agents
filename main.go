@@ -1,15 +1,12 @@
 package main
 
 import (
+	outfit_recommender "AI_Agents/outfit-recommender"
 	"encoding/json"
 	"fmt"
 	"log"
 	"net/http"
-
-	outfit_recommender "outfit-recommender/outfit-recommender"
 )
-
-// TODO: Add IP to location parsing with ip2region
 
 func outfitRecommendHandler(w http.ResponseWriter, r *http.Request) {
 	if r.Method != http.MethodGet {
@@ -19,6 +16,7 @@ func outfitRecommendHandler(w http.ResponseWriter, r *http.Request) {
 
 	question := r.URL.Query().Get("question")
 	pref := r.URL.Query().Get("pref")
+	location := r.URL.Query().Get("loc")
 
 	if question == "" {
 		http.Error(w, "Missing 'question' parameter", http.StatusBadRequest)
@@ -27,13 +25,11 @@ func outfitRecommendHandler(w http.ResponseWriter, r *http.Request) {
 	if pref == "" {
 		pref = "casual"
 	}
+	if location == "" {
+		location = "Shanghai"
+	}
 
-	// TODO: Parse location from IP
-	location := "Shanghai" // Default
-
-	args := []string{"-question", question, "-pref", pref, "-loc", location}
-
-	recommendation, err := outfit_recommender.Start(args)
+	recommendation, err := outfit_recommender.GetRecommendation(question, pref, location)
 	if err != nil {
 		http.Error(w, fmt.Sprintf("Error: %v", err), http.StatusInternalServerError)
 		return
@@ -53,7 +49,7 @@ func main() {
 
 	http.HandleFunc("/ai_agents/outfit_recommend", outfitRecommendHandler)
 
-	port := "8080"
+	port := "8081"
 	fmt.Printf("Starting server on port %s\n", port)
 	log.Fatal(http.ListenAndServe(":"+port, nil))
 }
