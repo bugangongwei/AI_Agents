@@ -3,42 +3,42 @@
     {
       "temperature_min": 25,
       "temperature_max": 35,
-      "weather": "sunny",
-      "schedule": "casual",
-      "preference": "casual",
-      "outfit": "T-shirt, shorts, and sandals"
+      "weather": "晴天",
+      "schedule": "休闲",
+      "preference": "休闲",
+      "outfit": "T恤、短裤和凉鞋"
     },
     {
       "temperature_min": 15,
       "temperature_max": 25,
-      "weather": "cloudy",
-      "schedule": "work",
-      "preference": "formal",
-      "outfit": "Button-up shirt, trousers, and loafers"
+      "weather": "多云",
+      "schedule": "工作",
+      "preference": "正式",
+      "outfit": "衬衫、西裤和乐福鞋"
     },
     {
       "temperature_min": 5,
       "temperature_max": 15,
-      "weather": "rainy",
-      "schedule": "outdoor",
-      "preference": "sporty",
-      "outfit": "Jacket, waterproof pants, and sneakers"
+      "weather": "雨天",
+      "schedule": "户外",
+      "preference": "运动",
+      "outfit": "夹克、防雨裤和运动鞋"
     },
     {
       "temperature_min": -5,
       "temperature_max": 5,
-      "weather": "snowy",
-      "schedule": "casual",
-      "preference": "warm",
-      "outfit": "Heavy coat, scarf, gloves, and boots"
+      "weather": "雪天",
+      "schedule": "休闲",
+      "preference": "保暖",
+      "outfit": "厚外套、围巾、手套和靴子"
     },
     {
       "temperature_min": 20,
       "temperature_max": 30,
-      "weather": "sunny",
-      "schedule": "formal",
-      "preference": "elegant",
-      "outfit": "Blouse, skirt, and heels"
+      "weather": "晴天",
+      "schedule": "正式",
+      "preference": "优雅",
+      "outfit": "衬衫、裙子和高跟鞋"
     }
   ]
 }
