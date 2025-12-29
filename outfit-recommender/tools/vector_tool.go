@@ -9,6 +9,7 @@ import (
 	"net/http"
 	"net/url"
 	"os"
+	"strconv"
 	"time"
 
 	"github.com/milvus-io/milvus-sdk-go/v2/client"
@@ -19,9 +20,13 @@ import (
 // 	Embeddings [][]float32 `json:"embeddings"`
 // }
 
-var (
-	milvusClient   client.Client
+const (
+	vectorDim      = 512
 	collectionName = "outfit_preferences"
+)
+
+var (
+	milvusClient client.Client
 )
 
 func init() {
@@ -77,7 +82,7 @@ func init() {
 				Name:     "vector",
 				DataType: entity.FieldTypeFloatVector,
 				TypeParams: map[string]string{
-					"dim": "512",
+					"dim": strconv.Itoa(vectorDim),
 				},
 			},
 			{
@@ -182,7 +187,7 @@ func EmbedAndStore(text string) error {
 	ctx := context.Background()
 	_, err = milvusClient.Insert(ctx, collectionName, "",
 		entity.NewColumnVarChar("text", []string{text}),
-		entity.NewColumnFloatVector("vector", 512, [][]float32{vec}),
+		entity.NewColumnFloatVector("vector", vectorDim, [][]float32{vec}),
 		entity.NewColumnInt32("temperature_min", []int32{0}),
 		entity.NewColumnInt32("temperature_max", []int32{0}),
 		entity.NewColumnVarChar("weather", []string{""}),
@@ -197,29 +202,49 @@ func EmbedAndStoreRule(text string, tempMin, tempMax int, weather, preference, o
 		return fmt.Errorf("Milvus client not initialized")
 	}
 
+	// Input validation
+	if tempMin > tempMax {
+		return fmt.Errorf("temperature_min (%d) cannot be greater than temperature_max (%d)", tempMin, tempMax)
+	}
+	if tempMin < -100 || tempMax > 100 { // Reasonable temperature range
+		return fmt.Errorf("temperature values out of reasonable range: min=%d, max=%d", tempMin, tempMax)
+	}
+
 	// Get embedding
 	embeddings, err := getEmbeddings([]string{text})
 	if err != nil {
-		return err
+		return fmt.Errorf("failed to get embeddings: %w", err)
 	}
 	if len(embeddings) == 0 {
-		return fmt.Errorf("no embeddings for text %s returned", text)
+		return fmt.Errorf("no embeddings returned for text: %s", text)
 	}
 
 	vec := embeddings[0]
+	if len(vec) != vectorDim {
+		return fmt.Errorf("vector dimension mismatch: expected %d, got %d", vectorDim, len(vec))
+	}
 
-	// Insert into Milvus
-	ctx := context.Background()
-	_, err = milvusClient.Insert(ctx, collectionName, "",
+	// Prepare columns for insertion
+	columns := []entity.Column{
 		entity.NewColumnVarChar("text", []string{text}),
-		entity.NewColumnFloatVector("vector", 512, [][]float32{vec}),
+		entity.NewColumnFloatVector("vector", vectorDim, [][]float32{vec}),
 		entity.NewColumnInt32("temperature_min", []int32{int32(tempMin)}),
 		entity.NewColumnInt32("temperature_max", []int32{int32(tempMax)}),
 		entity.NewColumnVarChar("weather", []string{weather}),
 		entity.NewColumnVarChar("preference", []string{preference}),
 		entity.NewColumnVarChar("outfit", []string{outfit}),
-	)
-	return err
+	}
+
+	// Insert into Milvus with timeout
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	defer cancel()
+
+	_, err = milvusClient.Insert(ctx, collectionName, "", columns...)
+	if err != nil {
+		return fmt.Errorf("failed to insert into Milvus: %w", err)
+	}
+
+	return nil
 }
 
 func StorePreference(userInput, recommendation string) error {
@@ -245,7 +270,7 @@ func SearchSimilar(queryText string, maxTemp, minTemp float64, weather, pref str
 	ctx := context.Background()
 
 	// Build search request with filters
-	expr := fmt.Sprintf("temperature <= %d and temperature >= %d and weather == '%s' and preference == '%s'", int(maxTemp), int(minTemp), weather, pref)
+	expr := fmt.Sprintf("temperature_min <= %d and temperature_max >= %d and weather == '%s' and preference == '%s'", int(maxTemp), int(minTemp), weather, pref)
 
 	sp, err := entity.NewIndexFlatSearchParam()
 	if err != nil {
@@ -267,4 +292,12 @@ func SearchSimilar(queryText string, maxTemp, minTemp float64, weather, pref str
 	}
 
 	return results, nil
+}
+
+func ClearCollection() error {
+	if milvusClient == nil {
+		return fmt.Errorf("Milvus client not initialized")
+	}
+	ctx := context.Background()
+	return milvusClient.DropCollection(ctx, collectionName)
 }
