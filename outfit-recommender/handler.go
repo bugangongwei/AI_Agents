@@ -36,6 +36,7 @@ func outfitRecommendHandler(c *gin.Context) {
 
 func StartServer() {
 	router := gin.Default()
+	router.Use(RateLimit())
 	router.GET("/ai_agents/outfit_recommend", outfitRecommendHandler)
 	router.Run(":8081")
 }
