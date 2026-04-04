@@ -44,7 +44,7 @@ curl --compressed \
 */
 
 func GetWeather(location string) (maxTemp, minTemp float64, weather string, err error) {
-	err = godotenv.Load("outfit-recommender/.env")
+	err = godotenv.Load(".env")
 	if err != nil {
 		return 0, 0, "", fmt.Errorf("error loading .env file: %v", err)
 	}

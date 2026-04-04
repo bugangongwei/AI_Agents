@@ -2,47 +2,28 @@ package main
 
 import (
 	outfit_recommender "AI_Agents/outfit-recommender"
+	"AI_Agents/tools"
 	"log"
-	// "net/http"
+
+	"github.com/joho/godotenv"
 )
 
-// func outfitRecommendHandler(w http.ResponseWriter, r *http.Request) {
-// 	if r.Method != http.MethodGet {
-// 		http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
-// 		return
-// 	}
-
-// 	question := r.URL.Query().Get("question")
-// 	pref := r.URL.Query().Get("pref")
-// 	location := r.URL.Query().Get("loc")
-
-// 	if question == "" {
-// 		http.Error(w, "Missing 'question' parameter", http.StatusBadRequest)
-// 		return
-// 	}
-// 	if pref == "" {
-// 		pref = "casual"
-// 	}
-// 	if location == "" {
-// 		location = "Shanghai"
-// 	}
-
-// 	recommendation, err := outfit_recommender.GetRecommendation(question, pref, location)
-// 	if err != nil {
-// 		http.Error(w, fmt.Sprintf("Error: %v", err), http.StatusInternalServerError)
-// 		return
-// 	}
-
-// 	response := map[string]string{"recommendation": recommendation}
-// 	w.Header().Set("Content-Type", "application/json")
-// 	json.NewEncoder(w).Encode(response)
-// }
-
 func main() {
+	// Load environment variables
+	if err := godotenv.Load(); err != nil {
+		log.Printf("Warning: .env file not found")
+	}
+
 	// Load clothing rules into Milvus on startup
 	err := outfit_recommender.LoadClothingRules()
 	if err != nil {
 		log.Printf("Failed to load clothing rules: %v", err)
+	}
+
+	// Pre-load IP database
+	err = tools.InitLocationTool("outfit-recommender/data/IP2LOCATION-LITE-DB5_CN.CSV")
+	if err != nil {
+		log.Printf("Failed to initialize location tool: %v", err)
 	}
 
 	// http.HandleFunc("/ai_agents/outfit_recommend", outfitRecommendHandler)

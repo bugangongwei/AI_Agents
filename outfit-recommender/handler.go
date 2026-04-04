@@ -1,6 +1,7 @@
 package outfit_recommender
 
 import (
+	"AI_Agents/tools"
 	"fmt"
 	"net/http"
 
@@ -11,6 +12,7 @@ func outfitRecommendHandler(c *gin.Context) {
 	question := c.Query("question")
 	pref := c.Query("pref")
 	location := c.Query("loc")
+	schedule := c.Query("schedule")
 
 	if question == "" {
 		c.JSON(http.StatusBadRequest, gin.H{"error": "Missing 'question' parameter"})
@@ -21,10 +23,15 @@ func outfitRecommendHandler(c *gin.Context) {
 		pref = "casual"
 	}
 	if location == "" {
-		location = "Shanghai"
+		// If location is missing, resolve city from IP
+		ip := c.ClientIP()
+		location = tools.GetCityFromIP(ip)
+		if location == "" {
+			location = "Shanghai"
+		}
 	}
 
-	recommendation, err := GetRecommendation(question, pref, location)
+	recommendation, err := GetRecommendation(question, pref, location, schedule)
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": fmt.Sprintf("Error: %v", err)})
 		return

@@ -1,7 +1,7 @@
 package outfit_recommender
 
 import (
-	"AI_Agents/outfit-recommender/tools"
+	"AI_Agents/tools"
 	"encoding/json"
 	"fmt"
 	"log"
@@ -45,9 +45,9 @@ func LoadClothingRules() error {
 	return nil
 }
 
-// GetRecommendation generates outfit recommendations based on user input, preferences, and location.
+// GetRecommendation generates outfit recommendations based on user input, preferences, location, and schedule.
 // It integrates weather data, searches for relevant clothing rules, and uses LLM for personalized suggestions.
-func GetRecommendation(userInput, preference, location string) (string, error) {
+func GetRecommendation(userInput, preference, location, schedule string) (string, error) {
 	if userInput == "" {
 		return "", fmt.Errorf("user input is required")
 	}
@@ -58,6 +58,17 @@ func GetRecommendation(userInput, preference, location string) (string, error) {
 		log.Printf("Failed to retrieve weather data: %v. Using default values (min: 15°C, max: 25°C, weather: 晴天)", err)
 		minTemp, maxTemp = 15, 25 // Corrected: min should be lower than max
 		weather = "晴天"
+	}
+
+	// Handle schedule: if not provided, try to fetch from Google Calendar
+	if schedule == "" {
+		todaySchedule, err := tools.GetTodaySchedule()
+		if err != nil {
+			log.Printf("Failed to retrieve today's schedule: %v. Proceeding with empty schedule", err)
+			schedule = "无日程"
+		} else {
+			schedule = todaySchedule
+		}
 	}
 
 	// Search for similar clothing rules in the vector database
@@ -75,8 +86,8 @@ func GetRecommendation(userInput, preference, location string) (string, error) {
 	}
 	rulesStr := rulesBuilder.String()
 
-	// Construct the prompt for the LLM, including weather context and instructions for natural language output with reasoning
-	prompt := fmt.Sprintf("用户问题: %s\n\n当前天气: 温度 %d-%d°C, 天气 %s\n\n相关穿衣规则:\n%s\n\n请基于用户问题、当前天气和相关穿衣规则，提供个性化的穿衣推荐。请解释您的决策过程，包括参考的天气条件、用户要求和穿衣规则。推荐应使用自然语言，避免特殊符号，直接面向用户。", userInput, minTemp, maxTemp, weather, rulesStr)
+	// Construct the prompt for the LLM, including weather context, schedule, and instructions
+	prompt := fmt.Sprintf("用户问题: %s\n\n当前位置: %s\n当前天气: 温度 %d-%d°C, 天气 %s\n今日日程: %s\n\n相关穿衣规则:\n%s\n\n请基于用户问题、当前天气、今日日程和相关穿衣规则，提供个性化的穿衣推荐。请解释您的决策过程，包括参考的天气条件、今日日程、用户要求和穿衣规则。推荐应使用自然语言，避免特殊符号，直接面向用户。", userInput, location, minTemp, maxTemp, weather, schedule, rulesStr)
 
 	// Obtain recommendation from LLM
 	recommendation, err := tools.GetLLMRecommendation(prompt)

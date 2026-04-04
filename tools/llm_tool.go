@@ -10,7 +10,7 @@ import (
 )
 
 func GetLLMRecommendation(prompt string) (recommendation string, err error) {
-	err = godotenv.Load("outfit-recommender/.env")
+	err = godotenv.Load(".env")
 	if err != nil {
 		return "", fmt.Errorf("error loading .env file: %v", err)
 	}
