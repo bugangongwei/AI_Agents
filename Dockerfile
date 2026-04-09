@@ -24,7 +24,7 @@ WORKDIR /root/
 # 复制构建阶段生成的二进制文件
 COPY --from=builder /outfit-agent .
 # 复制配置文件和数据
-COPY --from=builder /app/outfit-recommender outfit-recommender
+COPY --from=builder /app/outfit_recommender outfit_recommender
 
 # 暴露端口，运行应用程序
 EXPOSE 8081

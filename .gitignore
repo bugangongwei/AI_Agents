@@ -1,0 +1,9 @@
+# Docker volumes
+volumes/
+
+# Environment variables
+.env
+
+# Binary output
+*.out
+main

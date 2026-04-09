@@ -10,8 +10,8 @@ A collection of AI-powered agents built in Go, designed to perform various tasks
   - `location_tool.go`: IP-based city resolution.
   - `vector_tool.go`: Milvus vector database operations.
   - `weather_tool.go`: Weather API integration.
-- `outfit-recommender/`: An agent that provides clothing recommendations based on weather, location, and schedule.
-- `data/`: Contains data files like `IP2LOCATION-LITE-DB5_CN.CSV` and `clothing_rules.json`.
+- `outfit_recommender/`: An agent that provides clothing recommendations based on weather, location, and schedule.
+  - `data/`: Contains data files like `IP2LOCATION-LITE-DB5_CN.CSV` and `clothing_rules.json`.
 - `.env`: Environment variables for API keys and configuration.
 
 ## Features
